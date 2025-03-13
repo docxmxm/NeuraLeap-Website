@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraLeap - Advanced AI Learning Platform</title>
+    <meta name="description" content="NeuraLeap is an advanced AI learning platform offering cutting-edge courses on large language models, neural networks, and AI safety.">
+    <meta name="keywords" content="AI learning, machine learning, neural networks, LLM, AI safety, AI courses">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/animations.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Neural network background -->
+    <div class="neural-bg"></div>
+    <div class="tech-lines-bg"></div>
+    
+    <!-- Header navigation -->
+    <div id="header-container"></div>
+
+    <!-- Hero section with particle effect -->
+    <div class="hero-gradient relative min-h-screen flex items-center py-20 px-0 overflow-hidden">
+        <!-- Particle animation background -->
+        <div class="particles" id="particles-js"></div>
+        
+        <!-- Data flow animation effect -->
+        <div class="data-flow"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center relative z-10 w-full px-4 sm:px-6 lg:px-8">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 relative">
+                    Master the Next Gen <br>
+                    <span class="neon-text typewriter">AI Models</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-300 leading-relaxed">
+                    Enhance your skills with cutting-edge large language model and AI safety courses. Stay ahead in the rapidly evolving field of artificial intelligence.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="/pages/courses/index.html" class="primary-button text-white px-6 py-3 rounded-lg flex items-center justify-center pulse-button">
+                        Explore Courses <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    <a href="/pages/contact.html" class="neon-button px-6 py-3 rounded-lg flex items-center justify-center">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+
+            <!-- Neural network visualization -->
+            <div class="md:w-1/2 flex justify-center">
+                <div class="neural-network animate-float relative" id="neural-network">
+                    <!-- Remove the N in the center of neural network -->
+                    
+                    <!-- Add neon effect elements -->
+                    <div class="neon-pulse-container">
+                        <div class="neon-pulse neon-pulse-1"></div>
+                        <div class="neon-pulse neon-pulse-2"></div>
+                        <div class="neon-pulse neon-pulse-3"></div>
+                    </div>
+                    
+                    <!-- Add larger, more designed N -->
+                    <div class="designer-n">
+                        <div class="designer-n-shape">N</div>
+                        <div class="designer-n-glow"></div>
+                        <div class="designer-n-flicker">N</div>
+                        <div class="designer-n-highlight">N</div>
+                    </div>
+                    
+                    <!-- Neon Lines -->
+                    <div class="neon-lines">
+                        <div class="neon-line neon-line-1"></div>
+                        <div class="neon-line neon-line-2"></div>
+                        <div class="neon-line neon-line-3"></div>
+                        <div class="neon-line neon-line-4"></div>
+                    </div>
+                    
+                    <!-- Neon Nodes -->
+                    <div class="neon-nodes">
+                        <div class="neon-node neon-node-1"></div>
+                        <div class="neon-node neon-node-2"></div>
+                        <div class="neon-node neon-node-3"></div>
+                        <div class="neon-node neon-node-4"></div>
+                        <div class="neon-node neon-node-5"></div>
+                        <div class="neon-node neon-node-6"></div>
+                        <div class="neon-node neon-node-7"></div>
+                    </div>
+                    
+                    <!-- Neon Connections -->
+                    <div class="neon-connections">
+                        <div class="neon-connection neon-connection-1" data-from="1" data-to="3"></div>
+                        <div class="neon-connection neon-connection-2" data-from="1" data-to="2"></div>
+                        <div class="neon-connection neon-connection-3" data-from="2" data-to="4"></div>
+                        <div class="neon-connection neon-connection-4" data-from="3" data-to="5"></div>
+                        <div class="neon-connection neon-connection-5" data-from="4" data-to="6"></div>
+                        <div class="neon-connection neon-connection-6" data-from="5" data-to="7"></div>
+                        <div class="neon-connection neon-connection-7" data-from="4" data-to="7"></div>
+                        <div class="neon-connection neon-connection-8" data-from="2" data-to="6"></div>
+                    </div>
+                    
+                    <!-- Twinkle Stars -->
+                    <div class="twinkle twinkle-1"></div>
+                    <div class="twinkle twinkle-2"></div>
+                    <div class="twinkle twinkle-3"></div>
+                    <div class="twinkle twinkle-4"></div>
+                    <div class="twinkle twinkle-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured courses -->
+    <div class="py-16 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 relative inline-block">
+                    Featured <span class="neon-text">Courses</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-6">Discover our carefully designed popular courses to enhance your AI skills and understanding.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Course card 1 -->
+                <div class="card-bg rounded-xl overflow-hidden interactive-card floating-card">
+                    <div class="h-48 bg-gradient-to-r from-blue-800 to-cyan-700 flex items-center justify-center p-6 relative overflow-hidden">
+                        <!-- Course level badge -->
+                        <div class="absolute top-4 left-4 bg-black bg-opacity-50 text-cyan-400 px-3 py-1 rounded-full text-xs font-medium">
+                            Beginner
+                        </div>
+                        <!-- Course icon -->
+                        <div class="text-white text-5xl">🤖</div>
+                        <!-- Neural network lines -->
+                        <div class="neural-network-bg"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 neon-text">AI Fundamentals</h3>
+                        <p class="text-gray-400 mb-4">Learn the basic concepts, history, and application scenarios of AI to build a solid foundation for further study.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cyan-400 font-bold">$ 299</span>
+                            <a href="/pages/courses/ai-fundamentals.html" class="neon-button text-sm px-3 py-1 rounded">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course card 2 -->
+                <div class="card-bg rounded-xl overflow-hidden interactive-card floating-card">
+                    <div class="h-48 bg-gradient-to-r from-purple-800 to-indigo-600 flex items-center justify-center p-6 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-black bg-opacity-50 text-cyan-400 px-3 py-1 rounded-full text-xs font-medium">
+                            Intermediate
+                        </div>
+                        <div class="text-white text-5xl">🧠</div>
+                        <div class="neural-network-bg"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 neon-text">Large Language Models in Practice</h3>
+                        <p class="text-gray-400 mb-4">Dive deep into LLM principles and applications, learn prompt engineering, and build LLM-based applications.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cyan-400 font-bold">$ 599</span>
+                            <a href="/pages/courses/llm-practical.html" class="neon-button text-sm px-3 py-1 rounded">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course card 3 -->
+                <div class="card-bg rounded-xl overflow-hidden interactive-card floating-card">
+                    <div class="h-48 bg-gradient-to-r from-red-700 to-pink-600 flex items-center justify-center p-6 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-black bg-opacity-50 text-cyan-400 px-3 py-1 rounded-full text-xs font-medium">
+                            Advanced
+                        </div>
+                        <div class="text-white text-5xl">🔒</div>
+                        <div class="neural-network-bg"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 neon-text">AI Safety & Ethics</h3>
+                        <p class="text-gray-400 mb-4">Explore safety challenges in AI systems, ethical considerations, and best practices for building responsible AI.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cyan-400 font-bold">$ 799</span>
+                            <a href="/pages/courses/ai-safety.html" class="neon-button text-sm px-3 py-1 rounded">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="/pages/courses/index.html" class="neon-button px-6 py-3 rounded-lg inline-flex items-center">
+                    Browse All Courses
+                    <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our advantages section -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript imports -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        // Load header and footer components
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load header
+            fetch('/components/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+            
+            // Load footer
+            fetch('/components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+                
+            // Initialize particle effects if the element exists
+            if (document.getElementById('particles-js')) {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 60,
+                            "density": {
+                                "enable": true,
+                                "value_area": 1000
+                            }
+                        },
+                        "color": {
+                            "value": "#06b6d4"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.4,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 2,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#06b6d4",
+                            "opacity": 0.2,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 1.5,
+                            "direction": "none",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 150,
+                                "line_linked": {
+                                    "opacity": 0.3
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+    </script>
+</body>
+</html>
