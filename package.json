@@ -4,14 +4,9 @@
   "description": "NeuraLeap Website",
   "scripts": {
     "dev": "serve .",
-    "prebuild": "rm -rf dist",
-    "build": "mkdir -p dist && cp -r index.html assets css js components pages templates dist/ && cp vercel.json dist/ && cp package.json dist/",
-    "start": "serve dist"
+    "start": "serve ."
   },
   "dependencies": {
     "serve": "^14.2.1"
-  },
-  "devDependencies": {
-    "@vercel/static": "^2.0.0"
   }
 }
