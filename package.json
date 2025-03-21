@@ -1,15 +1,16 @@
 {
   "name": "neuraleap-website",
   "version": "1.0.0",
-  "description": "Advanced AI learning platform",
-  "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "dev": "live-server",
+    "build": "cp index.html dist/ && cp -r assets dist/ && cp -r css dist/ && cp -r js dist/",
+    "start": "live-server dist"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.0.0",
-    "express": "^4.17.1",
-    "tailwindcss": "^2.2.19"
+    "@agentdeskai/browser-tools-mcp": "^1.2.0",
+    "@supabase/supabase-js": "^2.49.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
