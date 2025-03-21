@@ -1,2 +1,14 @@
-/* Main CSS styles */
-/* Content from main.css */
+/* Main styles */
+:root {
+    --primary-color: #06b6d4;
+    --background-dark: #111827;
+    --text-light: #f3f4f6;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Add other main styles */
