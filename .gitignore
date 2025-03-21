@@ -1,12 +1,31 @@
+# Dependencies
 node_modules/
-.DS_Store
+
+# Environment variables
 .env
 .env.local
 .env.*.local
-*.log
+
+# Build output
 dist/
 build/
-.cache/
+
+# IDE files
+.idea/
 .vscode/
-*.swp
-*.swo
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development
+*.local
+
+# Supabase
+/supabase/.temp/
