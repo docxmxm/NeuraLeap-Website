@@ -4,11 +4,11 @@ Advanced AI learning platform with Supabase integration and email authentication
 
 ## Features
 
-- Modern, responsive UI
-- Authentication system
-- Course management
-- Interactive learning tools
-- Mobile compatibility
+* Modern, responsive UI
+* Authentication system
+* Course management
+* Interactive learning tools
+* Mobile compatibility
 
 ## Setup
 
@@ -19,8 +19,8 @@ Advanced AI learning platform with Supabase integration and email authentication
 
 ## Structure
 
-- `/css`: Stylesheets
-- `/js`: JavaScript files
-- `/pages`: HTML pages
-- `/components`: Reusable components
-- `/assets`: Images and other assets
+* `/css`: Stylesheets
+* `/js`: JavaScript files
+* `/pages`: HTML pages
+* `/components`: Reusable components
+* `/assets`: Images and other assets
