@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "live-server",
-    "build": "cp index.html dist/ && cp -r assets dist/ && cp -r css dist/ && cp -r js dist/",
+    "prebuild": "rm -rf dist && mkdir -p dist",
+    "build": "cp -r index.html assets css js pages components templates dist/ 2>/dev/null || true",
     "start": "live-server dist"
   },
   "dependencies": {
